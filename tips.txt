@@ -6,3 +6,12 @@ npm i webpack webpack-cli webpack-dev-server --save-dev
 npm i html-webpack-plugin html-loader --save-dev
 npm i babel-loader @babel/preset-env @babel/preset-react @babel/core --save-dev
 npm i css-loader mini-css-extract-plugin --save-dev
+
+Flujo de desarrollo seguro y consistente con ESLint
+(ya lo instale)
+$ sudo npm install -g eslint
+$ npm install eslint babel-eslint eslint-config-airbnb eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react --save-dev
+$ npm i prettier eslint-plugin-prettier eslint-config-prettier --save-dev
+
+// Se puede agregar este plugin a vscode 
+https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
