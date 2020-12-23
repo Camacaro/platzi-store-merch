@@ -15,3 +15,21 @@ $ npm i prettier eslint-plugin-prettier eslint-config-prettier --save-dev
 
 // Se puede agregar este plugin a vscode 
 https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
+
+
+Git Hooks con Husky
+$ npm install husky --save-dev
+
+Agregar Husky a nuestro proyecto:
+Para integrar Husky a nuestro proyecto y garantizar que cada commit cumple con el estándar deseado debemos de agregar la integración dentro de nuestro archivo package.json.
+"husky": {
+    "hooks": {
+      "pre-commit": "npm test", 
+      "pre-push": "npm test",
+      "...": "..."
+    }
+  }
+
+Una vez agregada la configuración podemos estar seguros de que antes de agregar cada commit se ejecutarán estos hooks, los cuales validarán las pruebas necesarias que agreguemos a nuestro proyecto tenga un resultado positivo.
+
+Si existe un error o las pruebas que incorporamos el proyecto no funcionan, en la consola podremos ver el resultado mostrando el error por el cual no se puede enviar el commit a nuestro repositorio.
