@@ -5,3 +5,4 @@ npm i react react-dom
 npm i webpack webpack-cli webpack-dev-server --save-dev
 npm i html-webpack-plugin html-loader --save-dev
 npm i babel-loader @babel/preset-env @babel/preset-react @babel/core --save-dev
+npm i css-loader mini-css-extract-plugin --save-dev
