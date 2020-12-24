@@ -1,5 +1,5 @@
 import React, { useContext, useRef } from 'react'
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import AppContext from '../context/AppContext';
 import'../styles/components/Information.css';
 
@@ -8,6 +8,7 @@ const Information = () => {
   const { state, addToBuyer } = useContext(AppContext)
   const { cart } = state;
   const form = useRef(null);
+  const history = useHistory();
 
   const handleSubmit = () => {
     const formData = new FormData(form.current);
@@ -25,6 +26,7 @@ const Information = () => {
     }
 
     addToBuyer(buyer);
+    history.push('/checkout/payment')
   }
 
   return (
@@ -53,9 +55,7 @@ const Information = () => {
             </Link>
           </div>
           <div className="Information-next">
-            <Link to="/checkout/payment">
-              <button type="button" onClick={handleSubmit}> Pagar </button>
-            </Link>
+            <button type="button" onClick={handleSubmit}> Pagar </button>
           </div>
         </div>
       </div>
