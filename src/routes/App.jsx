@@ -7,20 +7,29 @@ import Information from '../container/Information';
 import NotFound from '../container/NotFound';
 import Payment from '../container/Payment';
 import Success from '../container/Success';
+import AppContext from '../context/AppContext';
+import useInitialState from '../hooks/useInitialState';
 
-const App = () => (
-  <BrowserRouter>
-    <Layout>
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/checkout" component={Checkout} />
-        <Route exact path="/checkout/information" component={Information} />
-        <Route exact path="/checkout/payment" component={Payment} />
-        <Route exact path="/checkout/success" component={Success} />
-        <Route component={NotFound} />
-      </Switch>
-    </Layout>
-  </BrowserRouter>
-)
+const App = () => {
+
+  const inistialState = useInitialState();
+
+  return (
+    <AppContext.Provider value={inistialState}>
+      <BrowserRouter>
+        <Layout>
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/checkout" component={Checkout} />
+            <Route exact path="/checkout/information" component={Information} />
+            <Route exact path="/checkout/payment" component={Payment} />
+            <Route exact path="/checkout/success" component={Success} />
+            <Route component={NotFound} />
+          </Switch>
+        </Layout>
+      </BrowserRouter>
+    </AppContext.Provider>
+  )
+}
 
 export default App;
