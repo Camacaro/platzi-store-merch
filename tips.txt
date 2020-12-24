@@ -33,3 +33,36 @@ Para integrar Husky a nuestro proyecto y garantizar que cada commit cumple con e
 Una vez agregada la configuración podemos estar seguros de que antes de agregar cada commit se ejecutarán estos hooks, los cuales validarán las pruebas necesarias que agreguemos a nuestro proyecto tenga un resultado positivo.
 
 Si existe un error o las pruebas que incorporamos el proyecto no funcionan, en la consola podremos ver el resultado mostrando el error por el cual no se puede enviar el commit a nuestro repositorio.
+
+
+
+=======================
+Closure fuction 
+
+Lo que hizo Oscar es declarar en Product.jsx una función que llama a otra función 
+y pasarla como parametro a Product
+
+Es un closure y la clave esta en entender qué retorna cuando se ejecuta cada uno de los casos.
+La ejecución del closure retorna otra función o callback que esta listo para ser ejecutado. 
+En el caso del ejemplo cuando se ejecuta el método render del componente se ejecuta el 
+closure y retorna otra función y es en el onClick que se ejecuta la función previamente 
+retornada. El closure retorna la función más no la ejecuta.
+Por otro lado, la ejecución del la función tradicional no retorna nada porque ya se 
+ejecuta de una vez addToCart.
+
+const handleAddToCart = (product) => () => {
+	//
+}
+
+<button type="button" onClick={handleAddToCart(product)}>
+  Comprar
+</button>
+
+const handleAddToCart = (product) => {
+	//
+}
+<button type="button" onClick={() => handleAddToCart(product)}>
+  Comprar
+</button>
+
+
