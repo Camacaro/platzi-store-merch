@@ -16,6 +16,9 @@ $ npm i prettier eslint-plugin-prettier eslint-config-prettier --save-dev
 // Se puede agregar este plugin a vscode 
 https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
 
+Boton de paypal 
+npm i react-paypal-button
+
 
 Git Hooks con Husky
 $ npm install husky --save-dev
@@ -64,5 +67,7 @@ const handleAddToCart = (product) => {
 <button type="button" onClick={() => handleAddToCart(product)}>
   Comprar
 </button>
+
+
 
 
