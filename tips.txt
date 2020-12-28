@@ -70,4 +70,13 @@ const handleAddToCart = (product) => {
 
 
 
+Webhooks 
+https://www.campusmvp.es/recursos/post/que-son-los-webhooks-en-que-se-diferencian-de-una-api-rest-y-por-que-deberias-conocerlos.aspx
+
+Los webhooks son basicamente llamar la API del cliente cuando se encuentre
+satisfactorio el evento que el le interesa, el ejemplo clasico es que 
+se hace una compra hacia paypal, y tengo que esperar que me notifique que la compra 
+fue un exito para no tener que estar preguntandole a cada rato si se completo
+el disparara un endpoint POST con la data al yo recibir ese endpoint, proceso la 
+data y aviso al usuario que su compra fue procesada correctamente. 
 

@@ -11,19 +11,19 @@ const Payment = () => {
   const { cart, buyer } = state;
 
   const paypalOptions = {
-    clientId: 'access_token$sandbox$83xhr35mn9wrcpqh$10827e0661bad7ebfbafa8c83826eaa6',
+    clientId: 'AdfbnwV2xo9BApCGYcfyTxf4LSGk8Ek8KKWGoZABRqaI2P-DPU-DjiciYN6IfaKPkJtS3_zAjQzQx-T2',
     intent: 'capture',
     currency: 'USD',
   }
 
   const buttonStyles = {
     layout: 'vertical',
-    shape: 'rect'
+    shape: 'rect',
   }
 
   const handlePaymentSuccess = (data) => {
     console.log('handlePaymentSuccess', data);
-    if( data.status === 'COMPLETE' ) {
+    if( data.status === "COMPLETED" ) {
       
       const newOrder = {
         buyer,
