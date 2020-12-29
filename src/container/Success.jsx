@@ -1,12 +1,14 @@
 import React, { useContext } from 'react'
 import Map from '../components/Map';
 import AppContext from '../context/AppContext';
+import useGoogleAddress from '../hooks/useGoogleAddress';
 import'../styles/components/Success.css';
 
 const Success = () => {
 
   const { state } = useContext(AppContext);
   const { buyer } = state;
+  const location = useGoogleAddress(buyer[0].address);
 
   return (
     <div className="Succes">
@@ -17,7 +19,7 @@ const Success = () => {
         </h2>
         <span>Tu pedido llegara en 3 dias a tu dirección:</span>
         <div className="Success-map">
-          <Map />
+          <Map data={location} />
         </div>
       </div>
     </div>
