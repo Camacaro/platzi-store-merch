@@ -91,3 +91,6 @@ https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap
 
 https://www.npmjs.com/package/@react-google-maps/api
 npm i @react-google-maps/api
+
+GIT ACTIONS with firebase
+https://github.com/marketplace/actions/github-action-for-firebase
