@@ -32,7 +32,9 @@
     "FormData": true,
     "FileReader": true,
     "Blob": true,
-    "navigator": true
+    "navigator": true,
+    "self": true,
+    "caches": true
   },
   "parser": "babel-eslint"
 }

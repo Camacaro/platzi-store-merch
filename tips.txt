@@ -104,3 +104,4 @@ Analisis de performance con Lighthouse
 analiza el performance de tu web app
 ir a la consola y buscar la pestaña de Lighthouse y generar reporte ya sea 
 para destok o mobil
+
