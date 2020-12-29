@@ -17,6 +17,7 @@ $ npm i prettier eslint-plugin-prettier eslint-config-prettier --save-dev
 https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
 
 Boton de paypal 
+https://platzi.com/clases/2118-react-hooks/33506-paso-a-paso-para-conectar-tu-aplicacion-con-la-api/
 npm i react-paypal-button
 
 
@@ -80,3 +81,13 @@ fue un exito para no tener que estar preguntandole a cada rato si se completo
 el disparara un endpoint POST con la data al yo recibir ese endpoint, proceso la 
 data y aviso al usuario que su compra fue procesada correctamente. 
 
+
+Google Cloud Platform
+Project: react-platzi-config-merch
+key: AIzaSyDi2ZhGQr6gagk72u-TR2mWPHPkfZC8CT0
+key=API_KEY
+https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap
+
+
+https://www.npmjs.com/package/@react-google-maps/api
+npm i @react-google-maps/api
