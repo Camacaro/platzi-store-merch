@@ -94,3 +94,8 @@ npm i @react-google-maps/api
 
 GIT ACTIONS with firebase
 https://github.com/marketplace/actions/github-action-for-firebase
+
+
+SEO 
+npm i react-helmet
+para añadir metadata
