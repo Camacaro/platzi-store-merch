@@ -99,3 +99,8 @@ https://github.com/marketplace/actions/github-action-for-firebase
 SEO 
 npm i react-helmet
 para añadir metadata
+
+Analisis de performance con Lighthouse
+analiza el performance de tu web app
+ir a la consola y buscar la pestaña de Lighthouse y generar reporte ya sea 
+para destok o mobil
